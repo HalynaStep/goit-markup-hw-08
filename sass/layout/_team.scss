@@ -1,0 +1,36 @@
+.section--other-bg {
+  background-color: var(--second-section-background-color);
+}
+
+.team {
+  display: flex;
+}
+
+.team__item {
+  overflow: hidden;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: #ffffff;
+}
+
+.team__title {
+  @include font($fz: 16px, $fw: 500, $lh: 1.19, $ls: 0.03em);
+  text-align: center;
+  color: var(--main-title-color);
+  margin-bottom: 10px;
+}
+
+.team__name {
+  @include font($fz: 16px, $fw: 500, $lh: 1.19, $ls: 0.03em);
+  text-align: center;
+  margin-bottom: 16px;
+}

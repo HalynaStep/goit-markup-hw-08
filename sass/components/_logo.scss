@@ -1,0 +1,15 @@
+.logo {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+
+  font-family: Raleway;
+  @include font($fz: 26px, $fw: 700, $lh: 1.19, $ls: 0.03em);
+}
+
+.logo__accent {
+  font-family: Raleway;
+  @include font($fz: 26px, $fw: 700, $lh: 1.19, $ls: 0.03em);
+  color: var(--accent-text-color);
+}
