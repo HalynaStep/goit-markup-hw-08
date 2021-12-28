@@ -8,7 +8,7 @@
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: var(--menu-background-color);
-  .container {
+  .mob-menu__thumb {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -60,7 +60,7 @@
   color: var(--accent-text-color);
 }
 
-.mob-contact__item {
+.communication__item {
   @include font($fz: 24px, $fw: 500, $lh: 1.17, $ls: 0.02em);
   color: var(--main-text-color);
   &:not(:last-child) {
@@ -68,24 +68,24 @@
   }
 }
 
-.mob-contact__link {
+.communication__link {
   @include font($fz: 24px, $fw: 500, $lh: 1.17, $ls: 0.02em);
   color: var(--main-text-color);
 }
 
-.mob-contact__link--tel {
+.communication__link--tel {
   @include font($fz: 34px, $fw: 500, $lh: 1.18, $ls: 0.02em);
   color: var(--accent-text-color);
 }
 
-.mob-social {
+.mob-menu__community {
   margin-top: 64px;
   display: flex;
   flex-wrap: wrap;
   margin-right: -10px;
   margin-left: -10px;
 }
-.mob-social__item {
+.community__item {
   @include font($fz: 18px, $fw: 500, $lh: 1.22, $ls: 0.02em);
   color: var(--accent-text-color);
   &:not(:last-child) {
@@ -93,7 +93,7 @@
   }
 }
 
-.mob-social__link {
+.community__link {
   @include font($fz: 18px, $fw: 500, $lh: 1.22, $ls: 0.02em);
   color: var(--accent-text-color);
   margin-right: 10px;
