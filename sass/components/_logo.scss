@@ -1,15 +1,38 @@
 .logo {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-
   font-family: Raleway;
-  @include font($fz: 26px, $fw: 700, $lh: 1.19, $ls: 0.03em);
+  @include font($fz: 24px, $fw: 700, $lh: 1.17, $ls: 0.03em);
+  @media screen and (min-width: 1200px) {
+    @include font($fz: 28px, $fw: 700, $lh: 1.19, $ls: 0.03em);
+  }
 }
 
 .logo__accent {
   font-family: Raleway;
   @include font($fz: 26px, $fw: 700, $lh: 1.19, $ls: 0.03em);
   color: var(--accent-text-color);
+}
+
+.logo--light-theme {
+  color: #000000;
+  margin-right: 88px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.logo--dark-theme {
+  color: var(--second-text-color);
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }

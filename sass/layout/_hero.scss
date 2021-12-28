@@ -1,25 +1,74 @@
 .hero {
-  max-width: 1600px;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 0;
   background-color: var(--accent-section-background-color);
   text-align: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Hero-min.jpg);
+    url(../../images/header-mobile-480-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/header-mobile-480-2x-min.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/header-tablet-768-min.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/header-tablet-768-2x-min.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding: 200px 0;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/header-desktop-1200-min.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/header-desktop-1200-2x-min.jpg);
+    }
+  }
 }
 
 .hero__title {
   margin-bottom: 30px;
 
-  @include font($fz: 44px, $fw: 900, $lh: 1.36, $ls: 0.06em);
+  @include font($fz: 26px, $fw: 900, $lh: 1.62, $ls: 0.06em);
   text-transform: uppercase;
   color: var(--accent-title-color);
+
+  @media screen and (min-width: 1200px) {
+    @include font($fz: 44px, $fw: 900, $lh: 1.36, $ls: 0.06em);
+  }
 }
 
 .hero__button {
