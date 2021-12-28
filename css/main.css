@@ -1552,7 +1552,19 @@ button {
   height: 100%;
   transform: translateY(101%);
   transition-property: transform;
-  padding: 63px 24px;
+  padding: 77px 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__description {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__description {
+    padding: 63px 24px;
+  }
 }
 
 .portfolio__title {

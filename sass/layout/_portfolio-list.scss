@@ -60,8 +60,14 @@
   transform: translateY(101%);
   transition-property: transform;
   @extend %animation-style;
+  padding: 77px 24px;
 
-  padding: 63px 24px;
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 
 .portfolio__title {
