@@ -330,6 +330,7 @@ button {
   top: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 5;
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
