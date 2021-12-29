@@ -44,7 +44,7 @@
 }
 
 .team__text {
-  @include font($fz: 16px, $fw: 500, $lh: 1.19, $ls: 0.03em);
+  @include font($fz: 16px, $fw: 400, $lh: 1.19, $ls: 0.03em);
   text-align: center;
   margin-bottom: 16px;
 }

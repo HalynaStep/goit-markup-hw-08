@@ -5,6 +5,9 @@
 .header__container {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    position: relative;
+  }
 }
 
 .navigation {
@@ -59,14 +62,12 @@
 }
 
 .contact {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 84px;
+  margin-left: auto;
   @media screen and (max-width: 768px) {
     display: none;
   }
   @media screen and (min-width: 1200px) {
-    margin-left: auto;
+    display: flex;
   }
 }
 .contact__item {

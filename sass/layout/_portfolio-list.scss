@@ -92,6 +92,6 @@
 }
 
 .portfolio__text {
-  @include font($fz: 16px, $fw: 500, $lh: 1.87, $ls: 0.03em);
+  @include font($fz: 16px, $fw: 400, $lh: 1.87, $ls: 0.03em);
   color: var(--main-text-color);
 }

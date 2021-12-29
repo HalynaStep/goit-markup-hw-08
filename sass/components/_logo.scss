@@ -28,11 +28,11 @@
 
 .logo--dark-theme {
   color: var(--second-text-color);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    margin-bottom: 25px;
     padding-top: 25px;
-    padding-bottom: 25px;
   }
 }

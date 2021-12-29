@@ -19,7 +19,7 @@
     flex-basis: calc(100% / 4 - 30px);
   }
   .advantages__description {
-    @include font($fz: 14px, $fw: 500, $lh: 1.71, $ls: 0.03em);
+    @include font($fz: 14px, $fw: 400, $lh: 1.71, $ls: 0.03em);
   }
 }
 

@@ -9,9 +9,15 @@
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 
-  @include font($fz: 36px, $fw: 700, $lh: 1.17, $ls: 0.03em);
+  @include font($fz: 28px, $fw: 700, $lh: 1.18, $ls: 0.03em);
   text-align: center;
   color: var(--main-title-color);
+  @media screen and (min-width: 1200px) {
+    @include font($fz: 36px, $fw: 700, $lh: 1.17, $ls: 0.03em);
+  }
 }

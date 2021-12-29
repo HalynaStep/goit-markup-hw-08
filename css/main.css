@@ -509,13 +509,28 @@ button {
 }
 
 .section__title {
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.17;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--main-title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .social {
@@ -598,14 +613,14 @@ button {
 
 .logo--dark-theme {
   color: var(--second-text-color);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
   .logo--dark-theme {
     margin-right: 93px;
+    margin-bottom: 25px;
     padding-top: 25px;
-    padding-bottom: 25px;
   }
 }
 
@@ -616,6 +631,12 @@ button {
 .header__container {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    position: relative;
+  }
 }
 
 .navigation {
@@ -670,9 +691,7 @@ button {
 }
 
 .contact {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 84px;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -683,7 +702,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .contact {
-    margin-left: auto;
+    display: flex;
   }
 }
 
@@ -817,7 +836,7 @@ button {
 
 .advantages__item .advantages__description {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -955,7 +974,7 @@ button {
 
 .team__text {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
@@ -1027,12 +1046,6 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-title-color);
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__adress-box {
-    margin-right: 165px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1127,20 +1140,21 @@ button {
   margin-top: 60px;
 }
 
-@media screen and (min-width: 768px) {
-  .footer__form {
-    margin-left: 93px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer__form {
+    margin-left: 93px;
     margin-top: 0;
   }
 }
 
 .form__field {
   display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form__field {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1235,16 +1249,29 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 480px) {
+  .backdrop {
+    padding: 93px 15px;
+  }
+}
+
 .modal {
   padding: 40px;
-  width: 450px;
+  width: 100%;
   min-height: 609px;
   background: var(--main-btn-color);
   border-radius: 4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1443,26 +1470,38 @@ button {
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  align-items: center;
+  margin-bottom: 40px;
   margin-right: -8px;
+}
+
+@media screen and (max-width: 768px) {
+  .filter {
+    margin-top: -15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .filter {
-    margin-bottom: 35px;
+    margin-bottom: 50px;
   }
 }
 
 .filter__item {
-  margin-bottom: 15px;
   margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .filter__item {
+    margin-top: 15px;
+  }
 }
 
 .filter__btn {
@@ -1591,7 +1630,7 @@ button {
 
 .portfolio__text {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
